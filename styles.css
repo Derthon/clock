@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+}
+
+#clock {
+	margin: auto;
+	width: 75rem;
+	margin-top: 10%;
+}
+
+.number-container, .colon, .period {
+	margin: 0.25rem 0.5rem;
+	width: 10rem;
+	display: inline-block;
+}
+
+.colon {
+	left: -0.45rem;
+	bottom: 5rem;
+}
+
+.colon, .period {
+	position: relative;
+	width: auto;
+}
+
+.colon .square {
+	display: block;
+}
+
+.colon .top {
+	margin-bottom: 0.5rem;
+}
+
+.square {
+	width: 3rem;
+	height: 3rem;
+	margin: -0.2rem;
+	padding: 0;
+	border-radius: 0.15rem;
+	display: inline-block;
+}
+
+.square.on {
+	background: white;
+}
+
+.square:not(.on) {
+	background: transparent;
+}
